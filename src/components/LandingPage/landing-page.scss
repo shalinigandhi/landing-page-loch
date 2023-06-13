@@ -4,6 +4,7 @@
     .sections-container {
         max-width: calc(100vw - 700px);
         width: 100%;
+        overflow: hidden;
     }
     .section {
         display: flex;

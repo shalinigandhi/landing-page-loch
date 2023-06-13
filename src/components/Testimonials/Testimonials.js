@@ -1,20 +1,28 @@
-import './testimonials.scss';
+import React, { useRef } from 'react';
 import Slider from "react-slick";
 import { IconLogo } from '../../lib/icons';
-
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    draggable: true,
-    variableWidth: true
-};
+import './testimonials.scss';
 
 const Testimonials = () => {
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        // speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // autoplay: true,
+        draggable: true,
+        variableWidth: true,
+        swipeToSlide: true
+    };
+    
+    const sliderRef = useRef();
+
+    const gotoNext = () => {
+        sliderRef.current.slickNext();
+    }
     return (
         <div className="testimonials-container">
             <div className="testimonials-wrapper">
@@ -22,10 +30,13 @@ const Testimonials = () => {
                 <div className="testimonials-content">
                     <div className="icon-wrapper"><IconLogo /></div>
                     <div className="testimonials-slider">
-                        <Slider {...settings}>
+                        <Slider
+                            ref={sliderRef}
+                            {...settings}
+                        >
                             {
                                 testimonials && testimonials.length && testimonials.map((t, index) => (
-                                    <div className="t-content">
+                                    <div className="t-content" onClick={() => gotoNext()}>
                                         <div className="name-designation">
                                             <span className="name">{t.name}</span>
                                             <span className="designation">{t.designation}</span>
