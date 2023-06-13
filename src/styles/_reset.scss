@@ -27,9 +27,9 @@ body {
 }
 
 body {
-    padding: 66px 0;
     position: relative;
     background: $dark-gray;
+    color: $white-gradient1;
 
     &::before {
         position: absolute;

@@ -1,0 +1,118 @@
+@import '../../styles/colors';
+
+.slider-container {
+    flex-grow: 1;
+    padding-left: 66px;
+
+    .slick-slide {
+        margin: 0 7px;
+    }
+
+    .content-card-container {
+        width: 189.7px !important;
+        min-height: 171.5px;
+        background: $white;
+        box-shadow: 0px 2.8px 7px rgba(0, 0, 0, 0.04), 0px 0.7px 0.7px rgba(0, 0, 0, 0.04);
+        background-color: $white;
+        border-radius: 8.4px;
+        padding: 14px;
+        position: relative;
+        color: $dark-gray;
+
+        .description {
+            font-weight: 500;
+            font-size: 11.2px;
+            line-height: 13px;
+        }
+
+        &.card-one {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 27.5%, rgba(22, 93, 255, 0.162) 157.71%), #FFFFFF;
+            box-shadow: 0px 2.8px 7px rgba(0, 0, 0, 0.04), 0px 0.7px 0.7px rgba(0, 0, 0, 0.04);
+
+            .description {
+                font-size: 14px;
+                line-height: 17px;
+                margin: 16.34px 0 15.5px;
+            }
+        }
+
+        &.card-two {
+            .description {
+                margin: 58px 0 14.6px;
+            }
+        }
+
+        &.card-three {
+            .description {
+                margin-top: 41.53px;
+
+                &.description-active {
+                    margin-top: 8.4px;
+                }
+            }
+            .select-container {
+                margin-top: 7px;
+            }
+        }
+
+        .card-input {
+            padding: 12px 11px;
+            background-color: $white;
+            border: 0.7px solid $light-gray;
+            border-radius: 5.6px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            max-height: 35px;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        .select-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            svg {
+                position: absolute;
+                top: 7px;
+                right: 2px;
+            }
+            .card-select {
+                background: rgba(229, 229, 230, 0.5);
+                border-radius: 2.8px;
+                border: none;
+                padding: 4.2px;
+                font-weight: 500;
+                font-size: 9.1px;
+                line-height: 11px;
+                color: $lighter-gray;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                min-width: 60px;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        
+
+        .save-btn {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 9.1px;
+            line-height: 11px;
+        }
+    }
+    
+}
+
+

@@ -7,8 +7,8 @@ export const IconBell = props => (
 
 export const IconBell1 = props => (
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <path d="M21 9.33301C21 7.47649 20.2625 5.69601 18.9497 4.38326C17.637 3.07051 15.8565 2.33301 14 2.33301C12.1435 2.33301 10.363 3.07051 9.05025 4.38326C7.7375 5.69601 7 7.47649 7 9.33301C7 17.4997 3.5 19.833 3.5 19.833H24.5C24.5 19.833 21 17.4997 21 9.33301Z" fill="#165DFF" fill-opacity="0.1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16.0181 24.5C15.813 24.8536 15.5186 25.1471 15.1644 25.3511C14.8102 25.5551 14.4086 25.6625 13.9998 25.6625C13.591 25.6625 13.1894 25.5551 12.8352 25.3511C12.481 25.1471 12.1866 24.8536 11.9814 24.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 9.33301C21 7.47649 20.2625 5.69601 18.9497 4.38326C17.637 3.07051 15.8565 2.33301 14 2.33301C12.1435 2.33301 10.363 3.07051 9.05025 4.38326C7.7375 5.69601 7 7.47649 7 9.33301C7 17.4997 3.5 19.833 3.5 19.833H24.5C24.5 19.833 21 17.4997 21 9.33301Z" fill="#165DFF" fillOpacity="0.1" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16.0181 24.5C15.813 24.8536 15.5186 25.1471 15.1644 25.3511C14.8102 25.5551 14.4086 25.6625 13.9998 25.6625C13.591 25.6625 13.1894 25.5551 12.8352 25.3511C12.481 25.1471 12.1866 24.8536 11.9814 24.5" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
 
@@ -21,8 +21,8 @@ export const IconCheckmark = props => (
 
 export const IconClock = props => (
     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-        <path d="M14.4001 25.6663C20.8434 25.6663 26.0667 20.443 26.0667 13.9997C26.0667 7.55635 20.8434 2.33301 14.4001 2.33301C7.95674 2.33301 2.7334 7.55635 2.7334 13.9997C2.7334 20.443 7.95674 25.6663 14.4001 25.6663Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M14.4004 7V14L19.0671 16.3333" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.4001 25.6663C20.8434 25.6663 26.0667 20.443 26.0667 13.9997C26.0667 7.55635 20.8434 2.33301 14.4001 2.33301C7.95674 2.33301 2.7334 7.55635 2.7334 13.9997C2.7334 20.443 7.95674 25.6663 14.4001 25.6663Z" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M14.4004 7V14L19.0671 16.3333" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>      
 );
 
@@ -35,14 +35,20 @@ export const IconEye = props => (
 
 export const IconStats = props => (
     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="25" viewBox="0 0 19 25" fill="none">
-        <path d="M18.0996 23.9004V9.90039" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9.7002 23.9V1.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1.2998 23.9V15.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.0996 23.9004V9.90039" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9.7002 23.9V1.5" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M1.2998 23.9V15.5" stroke="black" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
 
 export const IconLogo = props => (
     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
         <path d="M60 29.9444L52.7455 22.6898L52.7505 22.6848L30.067 0L22.8432 7.22386L22.8333 7.21393L0 30.0486L9.35245 39.4022L9.35742 39.3973L29.9608 60L39.3142 50.6464L39.3063 50.6385L60 29.9444ZM25.3947 36.7276L36.7409 25.3813L41.2991 29.9395L29.9529 41.2859L25.3947 36.7276ZM23.266 34.5989L18.7109 30.0437L30.0581 18.6973L34.6132 23.2525L23.266 34.5989ZM37.251 48.4363L32.156 43.3412L50.6475 24.8493L55.7426 29.9444L37.251 48.4363ZM30.067 4.25849L48.493 22.6838L43.398 27.779L24.972 9.3536L30.067 4.25849ZM22.8333 11.4724L27.9283 16.5675L16.5821 27.9149L16.5643 27.8971L9.33459 35.1269L4.25743 30.0486L22.8333 11.4724ZM29.9608 55.7425L11.4871 37.2675L16.5821 32.1724L35.0558 50.6464L29.9608 55.7425Z" fill="white"/>
+    </svg>
+);
+
+export const IconArrowDown = props => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path d="M3.79965 4.59953L6.17719 6.97704C6.24553 7.04538 6.35633 7.04538 6.42467 6.97704L8.80215 4.59953C8.9124 4.48928 8.83435 4.30078 8.67839 4.30078H3.9234C3.76749 4.30078 3.68941 4.48928 3.79965 4.59953Z" fill="#96979A" />
     </svg>
 );
