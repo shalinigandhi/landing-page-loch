@@ -1,0 +1,66 @@
+@import '../../styles/colors';
+
+.testimonials-container {
+    width: 100%;
+   
+    .heading {
+        text-align: right;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $white-gradient1;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(229, 229, 230, 0.5);
+    }
+    .testimonials-content {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 40px;
+
+        .icon-wrapper {
+            svg {
+                margin-bottom: 35px;
+                display: inline-block;
+            }
+        }
+    }
+    .testimonials-slider {
+        margin-left: 40px;
+        .slick-slide {
+            margin: 0 10px;
+        }
+        .t-content {
+            background: $white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04), 0px 1px 1px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 353px;
+
+            .name-designation {
+                margin-bottom: 21.5px;
+
+                .name {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $dark-gray;
+                    margin-right: 8px;
+                    display: inline-block;
+                }
+                .designation {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $gray-gradient4;
+                }
+            }
+            
+            .t-message {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $black-gradient;
+            }
+        }
+    }
+}

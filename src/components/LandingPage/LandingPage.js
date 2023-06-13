@@ -1,5 +1,6 @@
 import { IconBell, IconEye } from '../../lib/icons';
 import Slider from '../Slider/Slider';
+import Testimonials from '../Testimonials/Testimonials';
 import SignUp from '../SignUp/SignUp';
 import cohortsImage from '../../images/cohorts.svg';
 import './landing-page.scss';
@@ -29,7 +30,7 @@ const LandingPage = () => {
                         ))
                     }
                     <section className="section">
-
+                        <Testimonials />
                     </section>
                 </div>
                 <SignUp/>

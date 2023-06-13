@@ -15,6 +15,11 @@
             justify-content: flex-end;
         }
 
+        &:last-of-type {
+            margin-top: 22px;
+            padding-right: 62px;
+        }
+
         .content-image-wrapper {
             min-width: 335px;
             height: 306px;
