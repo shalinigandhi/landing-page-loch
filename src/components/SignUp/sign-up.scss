@@ -31,6 +31,10 @@
             font-size: 16px;
             line-height: 19px;
 
+            &:focus {
+                outline: none;
+            }
+
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 font-weight: 500;
                 font-size: 16px;
