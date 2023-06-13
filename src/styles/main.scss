@@ -1,0 +1,9 @@
+@import './responsive';
+@import './colors';
+@import './reset';
+
+.container {
+    max-width: 1440px;
+    padding: 0 46px;
+    margin: 0 auto;
+}

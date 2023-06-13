@@ -1,0 +1,48 @@
+@import './colors';
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    padding: 66px 0;
+    position: relative;
+    background: $dark-gray;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: -114px;
+        right: 0;
+        bottom: 0;
+        left: -384px;
+        background: radial-gradient(79.84% 79.84% at 32.27% 91.27%, rgba(31, 169, 17, 0.810119) 17.21%, #2F15D0 64.58%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        z-index: -1;
+    }
+}
+
+img {
+    width: 100%;
+}
