@@ -1,5 +1,6 @@
 import { IconBell, IconEye } from '../../lib/icons';
 import Slider from '../Slider/Slider';
+import SignUp from '../SignUp/SignUp';
 import cohortsImage from '../../images/cohorts.svg';
 import './landing-page.scss';
 
@@ -8,27 +9,30 @@ const LandingPage = () => {
     return (
         <div className="landing-page-container">
             <div className="container">
-                {
-                    contentList && contentList.length && contentList.map((content, index) => (
-                        <section className="section" key={index}>
-                            {
-                                index === 1 ?
-                                    <div className="content-image-wrapper">
-                                        <img className="content-image" src={cohortsImage} alt="Cohorts"/>
-                                    </div> :
-                                    <Slider />
-                            }
-                            <div className={"content-container " + (index===1 && "text-right")}>
-                                {content.icon}
-                                <h3 className="content-heading">{content.heading}</h3>
-                                <p className="content-description">{content.description}</p>
-                            </div>
-                        </section>
-                    ))
-                }
-                <section className="section">
+                <div className="sections-container">
+                    {
+                        contentList && contentList.length && contentList.map((content, index) => (
+                            <section className="section" key={index}>
+                                {
+                                    index === 1 ?
+                                        <div className="content-image-wrapper">
+                                            <img className="content-image" src={cohortsImage} alt="Cohorts"/>
+                                        </div> :
+                                        <Slider />
+                                }
+                                <div className={"content-container " + (index===1 && "text-right")}>
+                                    {content.icon}
+                                    <h3 className="content-heading">{content.heading}</h3>
+                                    <p className="content-description">{content.description}</p>
+                                </div>
+                            </section>
+                        ))
+                    }
+                    <section className="section">
 
-                </section>
+                    </section>
+                </div>
+                <SignUp/>
             </div>
         </div>
     )
