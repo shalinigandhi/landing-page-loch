@@ -3,12 +3,13 @@ import { IconBell1, IconStats, IconClock, IconArrowDown, IconCheckmark } from '.
 import './slider.scss';
 
 const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    // speed: 500,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     draggable: true,
     variableWidth: true
 };

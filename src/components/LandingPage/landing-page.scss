@@ -1,6 +1,10 @@
 @import '../../styles/colors';
 
 .landing-page-container {
+    .sections-container {
+        max-width: calc(100vw - 686px);
+        width: 100%;
+    }
     .section {
         display: flex;
         align-items: center;
@@ -12,18 +16,18 @@
         }
 
         .content-image-wrapper {
-            width: 335px;
+            min-width: 335px;
             height: 306px;
             position: relative;
             margin-right: 38px;
         }
         .content-container {
             display: inline-block;
-            width: 25%;
-            min-width: 25%;
+            min-width: 42%;
     
             &.text-right {
                 text-align: right;
+                max-width: 28%;
             }
             .content-heading {
                 font-weight: 500;
