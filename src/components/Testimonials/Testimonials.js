@@ -17,7 +17,7 @@ const Testimonials = () => {
         variableWidth: true,
         swipeToSlide: true
     };
-    
+
     const sliderRef = useRef();
 
     const gotoNext = () => {
@@ -36,7 +36,7 @@ const Testimonials = () => {
                         >
                             {
                                 testimonials && testimonials.length && testimonials.map((t, index) => (
-                                    <div className="t-content" onClick={() => gotoNext()}>
+                                    <div className="t-content" onClick={() => gotoNext()} key={index}>
                                         <div className="name-designation">
                                             <span className="name">{t.name}</span>
                                             <span className="designation">{t.designation}</span>

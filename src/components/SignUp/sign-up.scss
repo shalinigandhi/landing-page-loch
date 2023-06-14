@@ -19,6 +19,18 @@
             line-height: 47px;
             color: $gray-gradient1;
         }
+        .input-message {
+            margin: 32px 0 24px;
+            position: relative;
+
+            .error-message {
+                position: absolute;
+                left: 24px;
+                bottom: 5px;
+                font-size: 12px;
+                color: red;
+            }
+        }
         .sign-up-input {
             background: $white;
             border: 1px solid $gray-gradient2;
@@ -26,7 +38,6 @@
             border-radius: 8px;
             width: 100%;
             padding: 20px 24px;
-            margin: 32px 0 24px;
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
@@ -73,6 +84,12 @@
             text-align: center;
             cursor: pointer;
             margin-bottom: 42px;
+
+            &.disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
         }
         .message {
             font-weight: 600;
