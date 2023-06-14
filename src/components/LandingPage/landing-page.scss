@@ -9,6 +9,7 @@
 
         @include mobileLarge {
             max-width: 100%;
+            margin-top: 20px;
         }
     }
     .section {
@@ -19,15 +20,26 @@
         @include mobileLarge {
             flex-direction: column-reverse;
         }
+
         &:first-of-type {
             margin-bottom: 72px;
             flex-direction: row-reverse;
             justify-content: flex-end;
+
+            @include mobileLarge {
+                flex-direction: column-reverse;
+                margin-bottom: 30px;
+            }
         }
 
         &:last-of-type {
             margin-top: 22px;
             padding-right: 62px;
+
+            @include mobileLarge {
+                margin-top: 50px;
+                padding-right: 0;
+            }
         }
 
         .content-image-wrapper {
@@ -35,14 +47,29 @@
             height: 306px;
             position: relative;
             margin-right: 38px;
+
+            @include mobileLarge {
+                min-width: 100%;
+                margin: 0;
+                margin-top: 20px;
+            }
         }
         .content-container {
             display: inline-block;
             min-width: 42%;
+
+            @include mobileLarge {
+                min-width: 100%
+            }
     
             &.text-right {
                 text-align: right;
                 max-width: 28%;
+
+                @include mobileLarge {
+                    max-width: 100%;
+                    text-align: left;
+                }
             }
             .content-heading {
                 font-weight: 500;
