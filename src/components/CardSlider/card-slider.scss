@@ -5,11 +5,24 @@
     flex-grow: 1;
     padding-left: 66px;
     max-width: 425px;
+    position: relative;
 
     @include mobileLarge {
         padding-left: 0;
         max-width: 100%;
         margin-top: 20px;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 425px;
+        height: 298px;
+        left: 310px;
+        top: -120px;
+        right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.921569) 47.6%, #000000 53.13%, rgba(0,0,0, 0.666667) 81.77%, rgba(0,0,0, 0) 100%);
+        z-index: 1;
     }
 
     .slick-slide {
