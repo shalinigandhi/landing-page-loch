@@ -1,5 +1,5 @@
 import { IconBell, IconEye } from '../../lib/icons';
-import Slider from '../Slider/Slider';
+import Slider from '../CardSlider/CardSlider';
 import Testimonials from '../Testimonials/Testimonials';
 import SignUp from '../SignUp/SignUp';
 import cohortsImage from '../../images/cohorts.svg';

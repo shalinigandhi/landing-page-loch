@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import { IconBell1, IconStats, IconClock, IconArrowDown, IconCheckmark } from '../../lib/icons';
-import './slider.scss';
+import './card-slider.scss';
 
 const settings = {
     dots: false,
