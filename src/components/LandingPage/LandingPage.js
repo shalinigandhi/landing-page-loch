@@ -9,6 +9,7 @@ const LandingPage = () => {
 
     return (
         <div className="landing-page-container">
+            <SignUp/>
             <div className="container">
                 <div className="sections-container">
                     {
@@ -33,7 +34,6 @@ const LandingPage = () => {
                         <Testimonials />
                     </section>
                 </div>
-                <SignUp/>
             </div>
         </div>
     )

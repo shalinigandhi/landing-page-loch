@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './sign-up.scss';
 
 const SignUp = () => {
-    const [errorMessage, setErrorMessage] = useState(["", true]);
+    const [errorMessage, setErrorMessage] = useState("");
     const [value, setValue] = useState("");
 
     const handleChange = (e) => {
@@ -10,16 +10,12 @@ const SignUp = () => {
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
         if (!email) {
-            setErrorMessage([
-                "Email is Required", true
-            ])
+            setErrorMessage("Email is Required");
         } else {
             resetErrorMessage();
         }
         if (!emailRegex.test(email)) {
-            setErrorMessage([
-                "Please enter a valid email", true
-            ])
+            setErrorMessage("Please enter a valid email");
         } else {
             resetErrorMessage();
         }
@@ -28,8 +24,13 @@ const SignUp = () => {
     }
 
     const resetErrorMessage = () => {
-        setErrorMessage("", false)
+        setErrorMessage("");
+        setValue("");
     }
+
+    const handleSubmit = () => {
+        window.location.replace('https://app.loch.one/welcome');
+    };
 
     return (
         <div className="sign-up-container">
@@ -47,12 +48,13 @@ const SignUp = () => {
                     />
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
                 </div>
-                <a
-                    className={"submit-btn " + (errorMessage && errorMessage.length && "disabled")}
-                    href={errorMessage[0] && errorMessage[1] ? "#" : "https://app.loch.one/welcome"}
+                <button
+                    className="submit-btn"
+                    disabled={errorMessage || !value}
+                    onClick={() => handleSubmit()}
                 >
                     Get started
-                </a>
+                </button>
                 <p className="message">You’ll receive an email with an invite link to join.</p>
             </div>
         </div>

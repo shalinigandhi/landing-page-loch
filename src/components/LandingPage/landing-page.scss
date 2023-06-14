@@ -1,15 +1,24 @@
 @import '../../styles/colors';
+@import '../../styles/responsive';
 
 .landing-page-container {
     .sections-container {
         max-width: calc(100vw - 700px);
         width: 100%;
         overflow: hidden;
+
+        @include mobileLarge {
+            max-width: 100%;
+        }
     }
     .section {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        @include mobileLarge {
+            flex-direction: column-reverse;
+        }
         &:first-of-type {
             margin-bottom: 72px;
             flex-direction: row-reverse;
