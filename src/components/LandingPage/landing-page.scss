@@ -7,8 +7,12 @@
         width: 100%;
         overflow: hidden;
 
-        @include mobileLarge {
+        @include tablet {
             max-width: 100%;
+            margin-top: 40px;
+        }
+
+        @include mobileLarge {
             margin-top: 20px;
         }
     }
@@ -36,9 +40,12 @@
             margin-top: 22px;
             padding-right: 62px;
 
+            @include tablet {
+                padding-right: 0;
+            }
+
             @include mobileLarge {
                 margin-top: 50px;
-                padding-right: 0;
             }
         }
 
@@ -66,8 +73,11 @@
                 text-align: right;
                 max-width: 28%;
 
-                @include mobileLarge {
+                @include tablet {
                     max-width: 100%;
+                }
+
+                @include mobileLarge {
                     text-align: left;
                 }
             }
